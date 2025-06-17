@@ -26,7 +26,7 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "@chrom-ar/mcp-base": "1.0.0-alpha.1",
+    "@chrom-ar/mcp-base": "1.0.0-alpha.2",
     "@chrom-ar/utils": "0.1.4",
     "@velora-dex/sdk": "8.1.0",
     "agents": "0.0.95",
