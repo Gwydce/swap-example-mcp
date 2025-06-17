@@ -96,7 +96,6 @@ export default {
 
     return new Response("Not found", { status: 404 });
   },
-
   async scheduled(controller, env, ctx) {
     console.log("cron processed", controller);
 

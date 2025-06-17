@@ -1,5 +1,6 @@
 name = "swap-example-mcp"
 main = "src/index.ts"
+
 compatibility_date = "2025-03-10"
 compatibility_flags = ["nodejs_compat"]
 
@@ -15,4 +16,4 @@ migrations = [
 enabled = true
 
 [triggers]
-crons = [ { schedule = "35 * * * *", id = "hourly_task" } ]
+crons = [ "59 * * * *" ]
