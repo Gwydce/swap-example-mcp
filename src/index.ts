@@ -78,6 +78,8 @@ chromaMcp.server.tool(
 
 export class MyMCP extends McpAgent {
   server = chromaMcp.server;
+
+  async init() {};
 }
 
 
