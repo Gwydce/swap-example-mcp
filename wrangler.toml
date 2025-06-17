@@ -16,4 +16,4 @@ migrations = [
 enabled = true
 
 [triggers]
-crons = [ "59 * * * *" ]
+crons = [ "*/5 * * * *" ]
