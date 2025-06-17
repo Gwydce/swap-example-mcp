@@ -99,7 +99,7 @@ export default {
     return new Response("Not found", { status: 404 });
   },
   async scheduled(controller, env, ctx) {
-    console.log('ENV:");
+    console.log('ENV:');
     for (const [key, value] of Object.entries(env)) {
       console.log(`${key}: ${value}`);
     }
