@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 import { McpAgent } from "agents/mcp";
-import { ChromaMCP, McpServer } from '@chrom-ar/mcp-base';
+import { ChromaMCP } from '@chrom-ar/mcp-base';
 import { z } from 'zod';
 import dotenv from 'dotenv';
 
@@ -99,7 +99,7 @@ export default {
     return new Response("Not found", { status: 404 });
   },
 
-  async scheduled(controller, env, ctx) {
+  async scheduled(_controller, env, _ctx) {
     await chromaMcp.register(env.SERVER_URL!);
   },
 };

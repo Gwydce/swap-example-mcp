@@ -2,7 +2,7 @@ name = "swap-example-mcp"
 main = "src/index.ts"
 
 compatibility_date = "2025-03-10"
-compatibility_flags = ["nodejs_compat"]
+compatibility_flags = ["nodejs_compat", "nodejs_compat_populate_process_env"]
 
 durable_objects.bindings = [
   { name = "MCP_OBJECT", class_name = "MyMCP" }
@@ -16,8 +16,8 @@ migrations = [
 enabled = true
 
 [triggers]
-crons = [ "*/5 * * * *" ]
+crons = [ "*/10 * * * *" ]
 
 # SERVER_URL should match with the final MCP worker url (dev or custom domain)
 [vars]
-SERVER_URL = "https://swap-example-mcp.nestordetoke.workers.dev/mcp" # Keep the last /mcp for the registration process
+SERVER_URL = "https://swap-example-mcp.NAMESPACE.workers.dev/mcp" # Keep the last /mcp for the registration process
